@@ -6,31 +6,30 @@
     <body>
         <h1>Course sign Up page</h1>
         <p>Please Note : First Name, Last Name, password, and Email are required</p>
-        <p>First Name : <input type="text" name="Firstname" value="First Name"> 
-            Last Name : <input type="text" name="Last name" value="Last Name">
-        </p>
-        <p>
-            Email : <input type="name@gmail.com" name="email" value="email">
-            Password : <input type="password" name="password" value=""> 
-        </p>
-        <p>
-            Are you over the age of 18? 
-        </p>
-        <p>
-            Yes <input type="checkbox" name="over_18" value="yes">
-            No <input type="checkbox" name="over_18" value="no">
-        </p>
-        <p>
-            Do you have a credit card or Paypal?
-        </p>
-        <p>
-            <select name="payment_method">
-                <option value="credit_card">Credit Card</option>
-                <option value="paypal">Pay Pal</option>
-            </select>
-        </p>
-        <p>
+        <form action="Thank.html" method="get">
+            <label for="Fn"> First Name </label>
+            <input type="text" id="Fn" name="first_name" placeholder="First Name" required>
+            <label for="Ln"> Last Name </label>
+            <input type="text" id="Ln" name="last_name" placeholder="Last Name" required><br><br>
+            <label for="email"> Email </label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="password"> Password </label>
+            <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+            <p> Are you Over 18?</p>
+            <label for="y"> Yes </label>
+            <input type="radio" id="y" name="over" value="yes">
+            <label for="n"> No </label> 
+            <input type="radio" id="n" name="over" value="no"><br><br>
+            <p>
+                Do you have a credit card or Paypal?
+            </p>
+            <p>
+                <select name="payment_method">
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">Pay Pal</option>
+                </select>
+            </p>
             <input type="submit" value="Submit">
-        </p>
+        </form>
     </body>
 </html>
