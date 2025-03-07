@@ -1,56 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Django</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-top: 150px;
-        }
-        p {
-            color: #666;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to Mon Django</h1>
-    <p>This is a simple HTML page.</p>
-    <table border="1">
-
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-        </tr>
-    </table>
-    <form action="">
-        <label for="fname">First name:</label><br>
-        <input type="email" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="password" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
-    </form>
-</body>
+<html>
+    <head>
+        <title>Assessment</title>
+    </head>
+    <body>
+        <h1>Course sign Up page</h1>
+        <p>Please Note : First Name, Last Name, password, and Email are required</p>
+        <p>First Name : <input type="text" name="Firstname" value="First Name"> 
+            Last Name : <input type="text" name="Last name" value="Last Name">
+        </p>
+        <p>
+            Email : <input type="name@gmail.com" name="email" value="email">
+            Password : <input type="password" name="password" value=""> 
+        </p>
+        <p>
+            Are you over the age of 18? 
+        </p>
+        <p>
+            Yes <input type="checkbox" name="over_18" value="yes">
+            No <input type="checkbox" name="over_18" value="no">
+        </p>
+        <p>
+            Do you have a credit card or Paypal?
+        </p>
+        <p>
+            <select name="payment_method">
+                <option value="credit_card">Credit Card</option>
+                <option value="paypal">Pay Pal</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </body>
 </html>
-</script>
